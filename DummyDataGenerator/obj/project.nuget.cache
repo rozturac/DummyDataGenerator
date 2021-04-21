@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "GSI3TrIYqc47LYxLEIy4v3fbMcV+zkZ+xwAJM3vqEz+zWA7vGmT0V/u2dr8gKBaEEHlrJaEPoeev8zRk6sL4EQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rozturac\\source\\repos\\DummyDataGenerator\\DummyDataGenerator\\DummyDataGenerator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rozturac\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
