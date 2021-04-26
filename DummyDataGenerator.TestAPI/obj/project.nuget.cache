@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "j3ZGymE03hzmojTFic1yK4mKwR8Qh5X/FVKBij89GGybhz+sbvUSLtRDMNizG0+TFp8+b7JVvKRupianpMIwMA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rozturac\\source\\repos\\DummyDataGenerator\\DummyDataGenerator.TestAPI\\DummyDataGenerator.TestAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rozturac\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

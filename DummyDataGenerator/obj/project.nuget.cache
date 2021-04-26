@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "GSI3TrIYqc47LYxLEIy4v3fbMcV+zkZ+xwAJM3vqEz+zWA7vGmT0V/u2dr8gKBaEEHlrJaEPoeev8zRk6sL4EQ==",
+  "dgSpecHash": "Y2lFFSe6lkmjj7x4x9e4rhM/AfJI2pYqCBGO5sCjXSKRVsrvTyULKNRilMiRjQ1vkKuk8UgX9gSnj32hlxwwcw==",
   "success": true,
   "projectFilePath": "C:\\Users\\rozturac\\source\\repos\\DummyDataGenerator\\DummyDataGenerator\\DummyDataGenerator.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\rozturac\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\rozturac\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

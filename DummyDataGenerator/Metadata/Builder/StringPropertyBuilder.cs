@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 
 namespace DummyDataGenerator.Metadata.Builder
@@ -17,10 +18,10 @@ namespace DummyDataGenerator.Metadata.Builder
         private string _suffix, _prefix;
         private string _statixText;
         private TextContentType _textContentType = TextContentType.Mixed;
-        public StringPropertyBuilder(Type property) : base(property)
+        public StringPropertyBuilder(PropertyInfo property) : base(property)
         {
-            _numericalCollection = _numericalCollection ?? new string[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" };
-            _textualCollection = _textualCollection ?? Enumerable.Range('A', 'Z').Select(c => Char.ToString((char)c)).ToArray();
+            _numericalCollection ??= new string[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+            _textualCollection ??= new string[] { "A", "B", "C", "D", "E", "F", "G", "Ğ", "H", "I", "İ", "J", "K", "L", "M", "N", "O", "Ö", "P", "R", "S", "Ş", "T", "U", "Ü", "V", "Y", "Z" };
 
             if (_mixedCollection == null)
             {
@@ -43,26 +44,23 @@ namespace DummyDataGenerator.Metadata.Builder
 
         protected override object GetGeneratedValue()
         {
-            var middleValue = _statixText ?? SelectMiddleText() ?? GenerateMiddleText();
+            var middleValue = _statixText ?? SelectMiddleText() ?? GenerateMiddleText().ToLowerInvariant();
             return string.Concat(_prefix, middleValue, _suffix);
         }
 
         private string GenerateMiddleText()
         {
-            switch (_textContentType)
+            return _textContentType switch
             {
-                case TextContentType.OnlyNumerical:
-                    return string.Concat(Enumerable.Range(_minLength, _random.Next(_minLength, _maxLength)).Select(i => _numericalCollection[_random.Next(0, _numericalCollection.Length - 1)]));
-                case TextContentType.OnlyTextual:
-                    return string.Concat(Enumerable.Range(_minLength, _random.Next(_minLength, _maxLength)).Select(i => _textualCollection[_random.Next(0, _textualCollection.Length - 1)]));
-                default:
-                    return string.Concat(Enumerable.Range(_minLength, _random.Next(_minLength, _maxLength)).Select(i => _mixedCollection[_random.Next(0, _mixedCollection.Length - 1)])); ;
-            }
+                TextContentType.OnlyNumerical => string.Concat(Enumerable.Range(_minLength, _random.Next(_minLength, _maxLength)).Select(i => _numericalCollection[_random.Next(0, _numericalCollection.Length - 1)])),
+                TextContentType.OnlyTextual => string.Concat(Enumerable.Range(_minLength, _random.Next(_minLength, _maxLength)).Select(i => _textualCollection[_random.Next(0, _textualCollection.Length - 1)])),
+                _ => string.Concat(Enumerable.Range(_minLength, _random.Next(_minLength, _maxLength)).Select(i => _mixedCollection[_random.Next(0, _mixedCollection.Length - 1)])),
+            };
         }
 
         private string SelectMiddleText()
         {
-            return _collections != null ? _collections[_random.Next(0, _collections.Length)] : null;
+            return _collections?[_random.Next(0, _collections.Length)];
         }
     }
 }

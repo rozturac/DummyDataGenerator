@@ -1,0 +1,9 @@
+C:\Users\rozturac\source\repos\DummyDataGenerator\DummyDataGenerator\bin\Debug\netstandard2.1\DummyDataGenerator.deps.json
+C:\Users\rozturac\source\repos\DummyDataGenerator\DummyDataGenerator\bin\Debug\netstandard2.1\DummyDataGenerator.dll
+C:\Users\rozturac\source\repos\DummyDataGenerator\DummyDataGenerator\bin\Debug\netstandard2.1\DummyDataGenerator.pdb
+C:\Users\rozturac\source\repos\DummyDataGenerator\DummyDataGenerator\obj\Debug\netstandard2.1\DummyDataGenerator.csprojAssemblyReference.cache
+C:\Users\rozturac\source\repos\DummyDataGenerator\DummyDataGenerator\obj\Debug\netstandard2.1\DummyDataGenerator.AssemblyInfoInputs.cache
+C:\Users\rozturac\source\repos\DummyDataGenerator\DummyDataGenerator\obj\Debug\netstandard2.1\DummyDataGenerator.AssemblyInfo.cs
+C:\Users\rozturac\source\repos\DummyDataGenerator\DummyDataGenerator\obj\Debug\netstandard2.1\DummyDataGenerator.csproj.CoreCompileInputs.cache
+C:\Users\rozturac\source\repos\DummyDataGenerator\DummyDataGenerator\obj\Debug\netstandard2.1\DummyDataGenerator.dll
+C:\Users\rozturac\source\repos\DummyDataGenerator\DummyDataGenerator\obj\Debug\netstandard2.1\DummyDataGenerator.pdb

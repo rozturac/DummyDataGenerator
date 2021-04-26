@@ -5,7 +5,12 @@ using System.Text;
 
 namespace DummyDataGenerator
 {
-    public interface IDummyModelConfiguration<TModel> where TModel : class, new()
+    public interface IDummyModelConfiguration
+    {
+
+    }
+
+    public interface IDummyModelConfiguration<TModel> : IDummyModelConfiguration where TModel : class, new()
     {
         void Configure(DummyModelBuilder<TModel> model);
     }

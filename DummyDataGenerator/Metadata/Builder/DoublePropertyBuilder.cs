@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection;
 using System.Text;
 
 namespace DummyDataGenerator.Metadata.Builder
@@ -10,7 +11,7 @@ namespace DummyDataGenerator.Metadata.Builder
         private double _maxValue = double.MaxValue;
         private double? _staticValue;
 
-        public DoublePropertyBuilder(Type property) : base(property)
+        public DoublePropertyBuilder(PropertyInfo property) : base(property)
         {
         }
 

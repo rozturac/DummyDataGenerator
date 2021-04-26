@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection;
 using System.Text;
 
 namespace DummyDataGenerator.Metadata.Builder
@@ -10,7 +11,7 @@ namespace DummyDataGenerator.Metadata.Builder
         private int _maxValue = int.MaxValue;
         private int? _staticValue;
 
-        public IntPropertyBuilder(Type property) : base(property)
+        public IntPropertyBuilder(PropertyInfo property) : base(property)
         {
         }
 
